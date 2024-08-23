@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -24,18 +28,23 @@
     crossorigin="anonymous"
   ></script>
 </head>
+<style>
+  *{
+    font-family: manrope;
+  }
+</style>
 <body>
     <header>
-        <nav class=" px-5 lg:px-32">
+        <nav class=" px-5 gap-5 lg:px-32">
             <div class="navbar bg-base-100 text-2xl">
                 <div class="navbar-start">
                     <button class="btn btn-circle bg-green-300"><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
                 </button>
                 <h1><b>Rinterio</b></h1>
+                
                 </div>
-                <div class="flex-end justify-between lg:hidden">
-                    <button class="btn btn-circle lg:hidden"><i class="fa-solid fa-bars"></i></button>
-                </div>
+                
+                
                 
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -46,8 +55,10 @@
                     <li><a>Contact Us</a></li>
        
                   </ul>
-    
                 </div>
+                <div class="pl-40">
+                  <button class="btn btn-circle lg:hidden"><i class="fa-solid fa-bars"></i></button>
+              </div>
                 <div class="navbar-end hidden lg:flex">
                     <button class="btn btn-ghost btn-circle">
                         <svg
@@ -85,22 +96,103 @@
                 <button class="btn bg-accent-content
                 btn-circle"><i class="fa-solid fa-arrow-right text-white -rotate-45"></i></button>
               </button>
-              
-            </button>
-              
-            </div>
+            </div> 
             
-        
-                    
+  </div>
                 
               </div>
         </nav>
-
+      
     </header>
     <main>
+        <div class="lg:px-32">
+          <div class="card bg-gradient-to-b from-gray-100">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/banner.png"
+                alt=""
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center px-40">
+              <h2 class="card-title text-4xl font-extrabold lg:text-6xl font-extrabold	">A barn house of this design has a striking appearance</h2>
+              <p class="text-xl">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <div class="card-actions">
+                <div class="btn btn-round bg-green-500">
+            
+                  Book Consult
+                  <button class="btn bg-green-200
+                  btn-circle"><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+                </button>
+                
+              </div>
+              </div>
+            </div>
+          </div>
 
+
+          <section>
+            <div>
+              <button>
+
+              </button>
+              <h1>We design thoughtful, liveable spaces</h1>
+              <p>The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            </div>
+            <div>
+              <img src="./assets/Rectangle.png" alt="">
+
+            </div>
+
+
+          </section>
+
+
+
+
+        </div>
+  
+  
+          
     </main>
     <footer>
+      <footer class="footer footer-center bg-black text-primary-content p-10">
+        <aside>
+        <div class=" flex-center navbar-start">
+          <button class="btn btn-circle bg-green-300"><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+      </button>
+      <h1><b>Rinterio</b></h1>
+      
+      </div>
+     
+        
+          <p>
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          
+            <ul class="menu menu-horizontal sm:menu-vertical px-1">
+              <li><a><b>Home</b></a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+ 
+            </ul>
+          
+        </aside>
+        <div class="card-actions">
+          <div class="btn btn-round bg-green-500">
+      
+            Book Consult
+            <button class="btn bg-black text-white
+            btn-circle"><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+          </button>
+          
+        </div>
+        </div>
+        
+      </footer>
 
     </footer>
 
