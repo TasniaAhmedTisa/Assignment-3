@@ -35,8 +35,8 @@
 </style>
 <body>
     <header>
-        <nav class="font-family:manrope px-5 gap-5 lg:px-32">
-            <div class="navbar bg-base-100 text-2xl">
+        <nav class="font-family:manrope bg-gray-100 px-5 gap-5 lg:px-32">
+            <div class="navbar bg-gray-100 text-2xl">
                 <div class="navbar-start">
                     <button class="btn btn-circle bg-green-300"><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
                 </button>
@@ -59,8 +59,8 @@
                 <div class="pl-40">
                   <button class="btn btn-circle lg:hidden"><i class="fa-solid fa-bars"></i></button>
               </div>
-                <div class="navbar-end hidden lg:flex">
-                    <button class="btn btn-ghost btn-circle">
+                <div class="navbar-end hidden lg:flex gap-5">
+                    <button class="btn btn-ghost btn-circle bg-white">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           class="h-5 w-5"
@@ -74,7 +74,7 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                       </button>
-                      <button class="btn btn-ghost btn-circle">
+                      <button class="btn btn-ghost btn-circle bg-white">
                       <svg
                        xmlns="http://www.w3.org/2000/svg"
                        class="h-5 w-5"
@@ -105,13 +105,13 @@
       
     </header>
     <main>
-        <div class="lg:px-32">
+        <div class="bg-gradient-to-b from-gray-100 lg:px-32">
           <div class="card bg-gradient-to-b from-gray-100">
             <figure class="px-10 pt-10">
               <img
                 src="./assets/banner.png"
                 alt=""
-                class="rounded-xl" />
+                class="" />
             </figure>
             <div class="card-body items-center text-center px-40">
               <h2 class="card-title text-4xl font-extrabold lg:text-6xl font-extrabold	">A barn house of this design has a striking appearance</h2>
@@ -129,7 +129,7 @@
 <!-- section1 -->
           <section class=" bg-gray-100 w-full lg:flex">
             <div class="p-10">
-              <img src="./assets/Vector.png" alt="">
+              <img src="./assets/Vector.png" alt="" class="border border-dashed">
               <button class="btn btn-round bg-white"><i class="fa-solid fa-arrow-right text-black"></i>About us</button>
               <h1 class="text-3xl font-extrabold mb-2">We design thoughtful,<br>liveable spaces</h1>
               <p class="mb-2">The barn house captivates with its blend of rustic charm and 
@@ -282,7 +282,7 @@
 
           </section>
           <section class="bg-gray-100">
-            <div>
+            <div class="mb-2">
               <div class="items-center text-center pb-5">
                 <button class="btn btn-round bg-green-100 items-center"><i class="fa-solid fa-arrow-right text-black"></i>Rinterio News</button>
                 <h1 class="text-3xl font-extrabold mb-2 py-5">Read Our Article and News</h1>
@@ -355,10 +355,10 @@
         <section>
           <div>
             <div style="background-image: url(./assets/bg.jpg);">
-              <div class="hero-overlay bg-opacity-10"></div>
+              <div class="hero-overlay bg-opacity-5"></div>
               <div class="hero-content font-family-manrope text-black text-center">
                <div class="max-w-md">
-                <button class="btn btn-round bg-green-100 items-center"><i class="fa-solid fa-arrow-right text-black"></i>        Let’s Connect
+                <button class="btn btn-round bg-green-100 items-center"><i class="fa-solid fa-arrow-right text-black"></i>Let’s Connect
                 </button>
                 <h1 class="mb-5 text-5xl font-extrabold">Let’s Discuss Next Project</h1>
                 <p class="mb-5">
@@ -367,22 +367,44 @@
               
                 </div>
               </div>
-              <div class="items-center pb-20 lg:px-40">
-                <input type="text" placeholder="First Name*" class="input input-bordered input-md w-full max-w-md" />
+              <div class="items-center p-0 lg:flex px-40 gap-5">
+                <div class="pb-8 w-full">
+                  <input type="text" placeholder="First Name*" class="input input-bordered rounded-3xl input-md w-full max-w-md " />
+                </div>
+                <div class="gap-5 pb-8 w-full">
+                 <input type="text" placeholder="Last Name*" class="input input-bordered rounded-3xl input-md w-full max-w-md" />
+                </div>
+              </div>
+              <div class="items-center gap-5 lg:flex flex-center px-40 ">
 
-                <input type="text" placeholder="Last Name*" class="input input-bordered input-md w-full max-w-md" />
+               <div class="pb-8 w-full">
+                <input type="number" placeholder="Phone*" class="input input-bordered rounded-3xl input-md w-full max-w-md" />
+               
+               </div>
+               <div class=" pb-8 w-full">
+                <input type="email" placeholder="Email*" class="input input-bordered rounded-3xl input-md w-full max-w-md" /><br>
+               </div>
+              </div>
 
-                <input type="number" placeholder="Phone*" class="input input-bordered input-md w-full max-w-md" />
-                <input type="email" placeholder="Email*" class="input input-bordered input-md w-full max-w-md" /><br>
-
-
+              <div class="px-40 pb-8">
                 <textarea
                 placeholder="Write a message"
-                class=" items-center textarea textarea-bordered textarea-lg w-full max-w-lg"></textarea>
+                class=" items-center textarea textarea-bordered rounded-3xl textarea-lg w-full	pb-5"></textarea>
 
               </div>
-              <button class="btn btn-wide bg-green-300 items-center">Send Mail</button>
-            </div>
+              
+
+
+                <div class="card-actions items-center px-40 pb-8">
+                  <div class="btn btn-round rounded-3xl w-full	 bg-green-400">
+              
+                    Send Mail
+                    <button class="btn bg-black text-white
+                    btn-circle"><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+                  </button>
+                  </div>
+                </div>
+                  
             
           </div>
           
@@ -393,7 +415,7 @@
     </main>
     <!-- footer section -->
     
-      <footer class="footer footer-center bg-black text-primary-content p-10">
+      <footer class="footer footer-center bg-black text-primary-content p-10 mb-10">
         <aside>
         <div class="flex flex-center navbar-start lg:px-20">
           <button class="btn btn-circle bg-green-300"><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
@@ -407,13 +429,13 @@
             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
           </p>
           
-            <ul class="lg:menu menu-horizontal gap-6">
+            <ul class=" gap-6 lg:flex flex-center">
               <li><a><b>Home</b></a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
               <li><a>Contact Us</a></li>
- 
+   
             </ul>
           
         </aside>
